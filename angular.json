@@ -25,9 +25,10 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "polyfills": [
-              "@angular/localize/init"
-            ]
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            "polyfills": ["@angular/localize/init"]
           },
           "configurations": {
             "production": {
