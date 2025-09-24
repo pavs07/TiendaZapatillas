@@ -1,0 +1,206 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.video-fondo video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.banner-contenido {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.banner-contenido p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.banner-contenido h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+/*seccion imagenes*/
+.imagenes-contenedor {
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagen-wrapper {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.imagen-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imagen-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.46);
+}
+
+.overlay2 .contenido-texto {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.imagenes-contenedor button {
+  font-weight: bold;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+}
+.imagenes-contenedor button:hover {
+  background: #eb0c62;
+  color: white;
+}
+/*Redes sociales*/
+.redes-sociales {
+  margin-top: 100px;
+  background-color: #95969723;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.redes-sociales h1 {
+  margin-bottom: 30px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  color: rgb(0, 0, 0) !important;
+}
+
+.redes-sociales ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.redes-sociales ul li {
+  display: flex;
+}
+
+.redes-sociales ul li a {
+  width: 70px;
+  height: 75px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 70px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.redes-sociales ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.redes-sociales ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.redes-sociales ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.redes-sociales ul li a:hover:before {
+  top: 0;
+}
+
+/* Colores por red social */
+.redes-sociales ul li:nth-child(1) a:before {
+  background: #ff0000;
+} /* YouTube */
+.redes-sociales ul li:nth-child(2) a:before {
+  background: #000000;
+} /* X/Twitter */
+.redes-sociales ul li:nth-child(3) a:before {
+  background: #e1306c;
+} /* Instagram */
+.redes-sociales ul li:nth-child(4) a:before {
+  background: #000000;
+} /* TikTok */
