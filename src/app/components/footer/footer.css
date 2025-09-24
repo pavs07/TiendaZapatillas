@@ -1,0 +1,23 @@
+footer {
+  background-color: #000; /* fondo negro */
+  color: #fff; /* texto blanco */
+  padding: 40px 20px; /* espacio interno */
+  text-align: center; /* centra el contenido */
+  font-family: "Roboto", sans-serif;
+}
+
+footer a {
+  color: #fff; /* enlaces blancos */
+  text-decoration: none; /* quita subrayado */
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #eb0c62;
+}
+
+footer p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
